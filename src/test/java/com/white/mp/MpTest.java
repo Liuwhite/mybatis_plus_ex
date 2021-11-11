@@ -70,7 +70,11 @@ public class MpTest {
         //like
 //        queryWrapper.like("username", "zh");
         //order by
-        queryWrapper.orderByAsc("birthday");
+//        queryWrapper.orderByAsc("birthday");
+        //group by
+        queryWrapper.groupBy("id", "username");
+
+
         List<Map<String, Object>> list = userMapper.selectMaps(queryWrapper);
 
     }
