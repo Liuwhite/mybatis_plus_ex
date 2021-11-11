@@ -33,4 +33,13 @@ public interface UserMapper extends BaseMapper<User> {
      * @return
      */
     List<Role> findMore2More();
+
+    /**
+     * 动态查询
+     * @return
+     */
+    User findByTj();
+
+
+    void updateBatch(List<User> users);
 }

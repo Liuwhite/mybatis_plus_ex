@@ -109,4 +109,10 @@ public class MpTest {
     public void findMore2More(){
         List<Role> userRoles = userMapper.findMore2More();
     }
+    //动态查询
+    @Test
+    public void findSelect(){
+
+    }
+
     }
