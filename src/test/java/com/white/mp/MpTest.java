@@ -25,7 +25,9 @@ public class MpTest {
         user.setUsername("wangwu");
         user.setPassword("789");
         user.setSex(0);
-        userMapper.insert(user);
+        int i = userMapper.insert(user);
+
+        System.out.println(user.getId());
     }
 
     @Test
