@@ -58,9 +58,17 @@ public class MpTest {
         Page<User> page = new Page<>();
         page.setCurrent(1);
         page.setSize(2);
-        Map map = new HashMap<String, Long>();
-        map.put("id", 2l);
-        userMapper.selectPageVo(page,map);
+
+        User userQuery = new User();
+        userQuery.setId(1l);
+        userQuery.setUsername("zhangsan");
+        QueryWrapper<User> wrapper = new QueryWrapper<>();
+        wrapper.eq("id", 1l).eq("username", "zhangsan");
+     /*   Map map = new HashMap<String, Long>();
+        map.put("id", 2l)*/;
+
+//        userMapper.selectPageVo(page,map);
+        userMapper.selectPage(page, wrapper);
     }
 
     //条件构造器
