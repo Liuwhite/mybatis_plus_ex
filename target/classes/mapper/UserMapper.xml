@@ -12,7 +12,7 @@
         <result column="username" property="username" jdbcType="VARCHAR"/>
         <result column="password" property="password" jdbcType="VARCHAR"/>
         <result column="birthday" property="birthday" jdbcType="TIMESTAMP"/>
-        <result column="sex" property="sex" jdbcType="INTEGER"/>
+        <result column="sex" property="sex" jdbcType="INTEGER"/> 
         <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
         <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
         <result column="is_del" property="isDel" jdbcType="INTEGER"/>
