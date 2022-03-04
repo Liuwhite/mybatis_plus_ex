@@ -30,6 +30,7 @@ public class MpFzTest {
     void test2(){
         UserQuery query = new UserQuery();
         query.setId(1l);
+        //git new branch
 //        userWrapper.and(wrapper ->wrapper.eq(“pwd”, pwd).or().eq(“phone”, phone));
         List<User> user = userMapper.selectList(new LambdaQueryWrapper<User>()
                 .eq(User::getIsDel,false)
